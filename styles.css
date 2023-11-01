@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ body {
 .advice-container{
   position: relative;
   background-color: hsl(217, 19%, 24%);
-  padding: 3rem 2rem 4.5rem 2rem;
+  padding: 3rem 2rem;
   width: 500px;
   display: flex;
   align-items: center;
@@ -40,9 +41,6 @@ body {
   font-size: 2rem;
   margin-bottom: 2.5rem;
 }
-.advice-container__divider-desktop{
-  margin: auto;
-}
 .advice-container__divider-mobile{
   display: none;
 }
@@ -52,7 +50,7 @@ body {
   height: 64px;
   border-radius: 50%;
   position: absolute;
-  bottom: 8rem;
+  bottom: 10rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -62,19 +60,34 @@ body {
   box-shadow:0 0 20px 0 hsl(150, 100%, 66%, 1);
   transition: .2s ease-in;
 }
-@media (max-width: 924px){
+@media (max-width: 768px){
   .advice-container__divider-mobile{
     display: block;
   }
   .advice-container__divider-desktop{
     display: none;
   }
-}
-@media (max-width: 924px){
-  .advice-container__divider-mobile{
-    display: block;
+  .advice-container{
+    padding: 2rem 1rem;
+    width: auto;
+    gap: 1rem;
+    border-radius: 5px;
   }
-  .advice-container__divider-desktop{
-    display: none;
+  .advice-container__advice-number{
+  font-size: small;
+  margin-bottom: 1rem;
+  }
+  .advice-container__advice-quote{
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .advice-generator__btn-img{
+    border-radius: 50%;
+    position: absolute;
+    bottom: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
